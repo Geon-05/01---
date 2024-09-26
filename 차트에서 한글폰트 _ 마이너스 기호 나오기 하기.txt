@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import os
+import seaborn as sns
+if os.name == 'nt':
+    font_family = "Malgun Gothic"
+else:
+    font_family = "AppleGothic"
+    
+sns.set(font=font_family, rc={"axes.unicode_minus" : False })
+
+# retina 를 지원하는 디스플레이에서 폰트가 선명하게 보이기 위함
+from IPython.display import set_matplotlib_formats
+
+set_matplotlib_formats("retina")
